@@ -1,0 +1,257 @@
+/************************************
+GENERAL
+************************************/
+
+body {
+  font-family: 'Jockey One', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%; /*sets max to width of container */
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/************************************
+HEADING
+************************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  
+}
+
+#logo {
+  text-align: center;
+  margin: 0; 
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  margin: 15px 0; /* spacing above and below, but none on left or right */
+  font-size: 1.75em; /* em are relative. 1 em is default */
+  font-weight: normal; /* unbolds because headings are default bolded */
+  line-height: 0.8em; /* amount of space for each line */
+}
+
+h2 { 
+  font-size: 1.25em;
+  margin: -5px 0 0; /*less space up top and other margins are zero */
+  font-weight: normal;
+}
+
+
+
+/************************************
+PAGE: PORTFOLIO
+************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* floats to left or right and appear side by side rather than stacked, 
+width regardless of browser size image will only take up 45% of parent element,
+margin on either side of image. width has 2 of 45 = 90. 4 margins at 2.5 equal rest */
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #880000;
+  color: #bdc3c7;
+  border-radius: 0 0 10% 10%;
+  box-shadow: 5px 5px 20px 5px black;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 1.25em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+}
+
+
+
+/************************************
+PAGE: ABOUT
+************************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+/************************************
+PAGE: CONTACT
+************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/************************************
+NAVIGATION
+************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;/*makes our links more bold and padding increases clickability */
+  padding: 15px 10px;
+    
+}
+
+
+/************************************
+FOOTER
+************************************/
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  padding-top: 50px;
+  color: #880000;
+  clear: both;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/************************************
+COLORS
+************************************/
+
+/*site body*/
+body {
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('red.jpg');
+  
+}
+
+/* green header */
+header {
+  background-image: linear-gradient(45deg, #660000, #ff1a1a 84%, #a6a6a6 85%, #ff1a1a 86%,
+					#ff1a1a 87%, #ff1a1a 88%, #595959 89%, #ff1a1a 90%, #ff1a1a 91%, #ff1a1a 92%, #000 93%, 
+					#ff1a1a 94%, #ff1a1a 95%);
+  border-color: #cc0000;
+}
+
+/* logo text */
+h1 {
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+	color: #fff;
+	text-shadow: 2px 2px 3px black;
+}
+
+/* links */
+a {
+  color: #3399ff;
+}
+
+/* nav background on mobile devices */
+nav {
+  background: #800000;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #f2f2f2;
+}
+
+/* anchor elements in the nav with class selected and pseudo class hover */
+nav a.selected, nav a:hover {
+  color: #fff;
+  font-size: 1.15em;
+  text-shadow: 2px 2px 3px black;
+}
+
+
+
+
+
+
+
+
