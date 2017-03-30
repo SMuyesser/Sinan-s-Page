@@ -76,6 +76,9 @@ margin on either side of image. width has 2 of 45 = 90. 4 margins at 2.5 equal r
   background-color: #880000;
   color: #bdc3c7;
   border-radius: 0 0 10% 10%;
+}
+
+#gallery li:hover {
   box-shadow: 5px 5px 20px 5px black;
 }
 
