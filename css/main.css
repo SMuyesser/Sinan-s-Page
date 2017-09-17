@@ -20,8 +20,8 @@ img {
   max-width: 100%; /*sets max to width of container */
 }
 
-h3 {
-  margin: 0 0 1em 0;
+img.line-break {
+  width: 100%;
 }
 
 .hidden {
@@ -247,6 +247,11 @@ PAGE: CONTACT
   font-size: 0.9em;
 }
 
+h3 {
+  margin: 0 0 1em 0;
+  color: #800000;
+}
+
 .contact-info a {
   display: block;
   min-height: 20px;
@@ -254,18 +259,28 @@ PAGE: CONTACT
   background-size: 20px 20px;
   padding: 0 0 0 30px;
   margin: 0 0 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/phone.png');
+  background-image: url('../images/phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/mail.png');
+  background-image: url('../images/mail.png');
 }
 
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+.contact-info li.linkedin a {
+  background-image: url('../images/linkedin logo.png');
+}
+
+.contact-info li.github a {
+  background-image: url('../images/github.png');
+}
+
+.contact-info li.facebook a {
+  background-image: url('../images/facebook.png');
 }
 
 /************************************
