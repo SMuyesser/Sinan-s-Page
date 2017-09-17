@@ -24,6 +24,10 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+.hidden {
+  display: none;
+}
+
 /************************************
 HEADING
 ************************************/
@@ -43,7 +47,7 @@ header {
   margin: 0; 
 }
 
-h1 {
+header h1 {
   font-family: 'Bungee', cursive;
   margin: 15px 0; /* spacing above and below, but none on left or right */
   font-size: 1.75em; /* em are relative. 1 em is default */
@@ -64,10 +68,14 @@ h1 {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-h2 { 
+header h2 { 
   font-size: 1.25em;
   margin: -5px 0 0; /*less space up top and other margins are zero */
   font-weight: normal;
+}
+
+header a {
+  color: white;
 }
 
 
@@ -87,13 +95,8 @@ PAGE: PORTFOLIO
 }
 
 #gallery li {
-  display: flex;
   align-items: center;
-  width: 100%;
   margin-bottom: 10px;
-}
-
-#gallery li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,28 +106,68 @@ PAGE: PORTFOLIO
   padding: 5px;
 }
 
-#gallery li a h2 {
+#gallery li h2 {
   font-size: 2em;
   width: 100%;
   color: #800000;
+  margin: 5px auto;
+  line-height: .75em;
 }
 
-#gallery li a p {
+#gallery li p {
   color: #1E1E1E;
   margin: 2px auto;
   width: 100%;
+  font-size: 1.25em;
 }
 
-#gallery li a img {
+#gallery li img.app-img {
   height: 200px;
   width: 150px;
   border: 2.5px solid #800000;
   margin: 5px auto;
   border-radius: 10px;
-    -webkit-box-shadow: 0 10px 6px -6px #444444;
-       -moz-box-shadow: 0 10px 6px -6px #444444;
-            box-shadow: 0 10px 6px -6px #444444;
+  -webkit-box-shadow: 0 10px 6px -6px #444444;
+     -moz-box-shadow: 0 10px 6px -6px #444444;
+          box-shadow: 0 10px 6px -6px #444444;
 
+}
+
+#gallery li p a {
+  color: black;
+}
+
+#gallery li p a:hover {
+  color: #800000;
+}
+
+#gallery li button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-weight: bolder;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-box-shadow: 0 10px 6px -6px #444444;
+     -moz-box-shadow: 0 10px 6px -6px #444444;
+          box-shadow: 0 10px 6px -6px #444444;
+}
+
+#gallery li button:hover {
+  border-radius: 10px;
+}
+
+#gallery li div.toggle p.app-description {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+#gallery li div.toggle p.toggle-title {
+  color: #800000;
 }
 
 
@@ -139,8 +182,15 @@ PAGE: ABOUT
   margin: 0 auto 10px auto;
 }
 
+.about-title {
+  text-align: center;
+  color: #800000;
+  font-size: 2em;
+  margin: 0px auto 5px auto;
+}
+
 .about-info p {
-  text-indent: 20px;
+  text-align: center;
 }
 
 .about-info img {
@@ -154,6 +204,34 @@ PAGE: ABOUT
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+div.tech-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.tech-pics img {
+  max-width: 50px;
+  max-height: 50px;
+  border: none;
+  margin: 2.5px;
+  border-radius: 0px;
+}
+
+div.tech-pics img.wide-logo {
+  max-width: 75px;
+  max-height: 25px;
+}
+
+div.tech-pics img.express {
+  max-height: 10px;
+}
+
+div.tech-pics img.express,
+div.tech-pics img.mongoose {
+  padding-top: 10px;
 }
 
 
@@ -237,7 +315,7 @@ FOOTER
 footer {
   font-size: 1em;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   color: #880000;
   clear: both;
 }
@@ -248,23 +326,6 @@ footer {
   margin: 0 5px;
 }
 
-
-
-/************************************
-COLORS
-************************************/
-
-a {
-  color: white;
+footer p {
+  margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
