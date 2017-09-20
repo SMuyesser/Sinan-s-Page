@@ -122,8 +122,8 @@ PAGE: PORTFOLIO
 }
 
 #gallery li img.app-img {
-  height: 200px;
-  width: 150px;
+  height: 250px;
+  width: 350px;
   border: 2.5px solid #800000;
   margin: 5px auto;
   border-radius: 10px;

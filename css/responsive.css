@@ -28,12 +28,22 @@
     border-bottom: 5px solid #000;
     margin-bottom: 60px;
   }
+
+  #gallery li img.app-img {
+    height: 300px;
+    width: 450px;
+  }
     
 }
 
 @media screen and (min-width: 750px) {
   div#wrapper {
     font-size: 2em;
+  }
+
+  #gallery li img.app-img {
+    height: 400px;
+    width: 550px;
   }
 }
 
