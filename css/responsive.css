@@ -1,32 +1,24 @@
 @media screen and (min-width: 480px) {
   
   nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    text-align: right;
-    width: 45%;   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Fjalla One', sans-serif;
   }
-  
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;   
+
+  nav a {
+    text-decoration: none;
+    color: #FF5039;
+    padding: 2px 5px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border-top: 2px solid #7F4A43;
   }
-  
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  h2 {
-    font-size: 0.825em;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    border-bottom: 5px solid #000;
-    margin-bottom: 60px;
+
+  nav a:hover {
+    border-top: 2px solid #FF5039;
   }
 
   #gallery li img.app-img {
@@ -37,8 +29,73 @@
 }
 
 @media screen and (min-width: 750px) {
-  div#wrapper {
-    font-size: 2em;
+
+  header {
+    background-color: #7F281D;
+    padding: 0px 20px 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  div#main-title {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1em;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+    color: #FF5039;
+  }
+
+  header h2 { 
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 5px;
+    color: #FF5039;
+  }
+
+  div#header-space-fix {
+    display: block;
+    height: 108px;
+  }
+
+  nav {
+    height: 100%;
+    width: 220px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #7F281D;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #FF5039;
+    padding: 2px 5px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: 2px solid #7F281D;
+  }
+
+  nav a:hover {
+    border-top: none;
+    border-bottom: 2px solid #FF5039;
+  }
+
+  section {
+    font-size: 1em;
   }
 
   #gallery li img.app-img {

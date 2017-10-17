@@ -5,65 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinan Muyesser | Future Programmer</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Jockey+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
   </head>  
   <body> 
     <header>
-      <a href="index.html" id="logo">
+      <div id="main-title">
         <h1>Sinan Muyesser</h1>
-        <h2>Full Stack Developer</h2>
-      </a>
+        <h2>Full Stack Web Developer</h2>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html" class="selected">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="#header-space-fix">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
-    <div id="wrapper">
-      <section class="about-info">
-        <h2 class="about-title">Hi I'm Sinan</h2>
-        <img src="images/sinan.jpg" alt="photo of Sinan" class="profile-photo">
-        <p>I'm a full stack developer who can do all of this, and I am learning more everyday.</p>
-        <div class="tech-pics">
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="images/HTML5_Logo_512.png" alt="HTML logo"></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"><img src="images/css.png" alt="CSS logo"></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images/javascript.png" alt="js logo"></a>
-          <a href="https://jquery.com/"><img src="images/jquery.png" alt="jquery logo"></a>
-          <a href="https://developer.mozilla.org/en-US/docs/AJAX"><img src="images/ajax.png" alt="ajax logo"></a>
-          <a href="https://facebook.github.io/react/"><img src="images/react.png" alt="react logo"></a>
-          <a href="http://redux.js.org/"><img src="images/redux.png" alt="redux logo"></a>
-          <a href="https://nodejs.org/en/"><img class="wide-logo" src="images/node.png" alt="node logo"></a>
-          <a href="https://www.npmjs.com/"><img src="images/npm.png" alt="npm logo"></a>
-          <a href="https://expressjs.com/"><img class="wide-logo express" src="images/express.png" alt="express logo"></a>
-          <a href="http://handlebarsjs.com/"><img src="images/handlebars.png" alt="handlebars logs"></a>
-          <a href="https://www.mongodb.com/"><img class="wide-logo" src="images/mongodb.png" alt="mongodb logo"></a>
-          <a href="http://mongoosejs.com/"><img class="wide-logo mongoose" src="images/mongoose.png" alt="mongoose logo"></a>
-          <a href="http://passportjs.org/"><img src="images/passport.png" alt="passport logo"></a>
-          <a href="https://www.netlify.com/"><img src="images/netlify.png" alt="netlify logo"></a>
-          <a href="https://www.heroku.com/"><img src="images/heroku.png" alt="heroku logo"></a>
-          <a href="https://mochajs.org/"><img src="images/mocha.png" alt="mocha logo"></a>
-          <a href="http://chaijs.com/"><img src="images/chai.png" alt="chai logo"></a>
-          <a href="https://travis-ci.org"><img src="images/travis.png" alt="travis logo"></a>
+    <div id="header-space-fix"></div>
+    <section class="about">
+      <h2 class="title">About Sinan</h2>
+      <img src="images/sinan.jpg" alt="photo of Sinan" class="profile-photo">
+      <p>These are my current skills, and I am learning more everyday.</p>
+      <ul id="skills" class="tech-list">
+        <div class='list1'>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>JQUERY</li>
+          <li>REACT</li>
+          <li>REDUX</li>
         </div>
-        <p>I am a web developer and recent graduate of the Full Stack Web Development bootcamp at Thinkful.  I enjoy coding because it allows me to create something from nothing, and I love the feeling of working hard to find solutions to problems involving client and server communication, learning a new framework or library, and anything that increases my knowledge of code.</p>  
-        <img id="gamer-pic" src="images/gamer.jpg">
-        <p>My detail oriented personality helps me to see the big picture, and the steps necessary to get there, while 
-          working on projects.  
-          When I'm not coding, I am either playing video games, golfing, on the beach, cooking, eating, watching soccer, or lounging with 
-          friends.  I am a very positive person who enjoys meeting new people and learning from them.  I believe if I am a better version of 
-          myself today than I was yesterday, then I am going in the right direction.</p>
-      </section>
-      <img class="line-break" src="images/line-break.png">
-      <footer>
-        <a href="https://www.linkedin.com/in/sinan-muyesser-1a8aa246/"><img src="images/linkedin logo.png" alt="Linkedin Logo" class="social-icon"></a>
-        <a href="https://github.com/smuyesser"><img src="images/github.png" alt="Github Logo" class="social-icon"></a>
-        <a href="http://facebook.com/smuyesser"><img src="images/facebook.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2017 Sinan Muyesser</p>
-      </footer>
-    </div>
+        <div class='list2'>
+          <li>NODE</li>
+          <li>NPM</li>
+          <li>EXPRESS</li>
+          <li>AJAX</li>
+          <li>HANDLEBARS</li>
+          <li>MONGODB</li>
+          <li>MONGOOSE</li>
+        </div>
+        <div class='list3'>
+          <li>PASSPORT</li>
+          <li>NETLIFY</li>
+          <li>HEROKU</li>
+          <li>MOCHA</li>
+          <li>CHAI</li>
+          <li>TRAVIS CI</li>
+        </div>
+      </ul>
+      <p>I am a web developer located in Santa Monica, California and recent graduate of the Full Stack Web Development bootcamp at Thinkful.  I enjoy coding because it allows me to create something from nothing, and I love the rewarding feeling of figurinig out solutions to problems involving client and server communication, learning a new framework or library, and anything that increases my knowledge of code.  My detail oriented personality helps me to see the big picture, and the steps necessary to get there, while 
+      working on projects. </p>  
+    </section>
+    <img id="portfolio" class="line-break" src="images/line-break.png">
+    <section class="portfolio">
+      <h2 class="title">Portfolio</h2>
+      <ul id="gallery">
+        <li>
+          <h3>Hungry?</h3>
+          <p>Recipe search app powered by Food2Fork API</p>
+          <img class="app-img" src="images/largehungry.png" alt="hungry?">
+          <p class="app-description">The HUNGRY? web app allows you to utilize the food2fork api to search an extensive database of delicious recipes.  If you are unsure of the recipe you're craving, you can also search by selecting the ingredients you would like to use.  Regardless of which option you choose, you will find tons of recipes with pictures to get your mouth watering.  It has helped me to turn random food items laying around the kitchen into tasty meals.</p>
+          <p><a href="https://smuyesser.github.io/Hungry-Recipes">Live Site</a> | 
+          <a href="https://github.com/SMuyesser/Hungry-Recipes">Code</a></p>
+          <p class='toggle-title'>Project made using:</p>
+          <p>HTML, CSS, JAVASCRIPT, JQUERY, NODE, NPM, EXPRESS, MOCHA, CHAI, TRAVIS CI</p>              
+        </li>
+        <li>
+          <h3>The Video Shelf</h3>
+          <p>Vimeo video database app</p>
+          <img class="app-img" src="images/vidshelflarge.png" alt="video shelf">
+          <p class="app-description">The Video Shelf web app was built for a friend's videography company. His videos are all on vimeo, but he needed a way to organize them on his own website. The Video Shelf allows the user to login, and then register clients with their name, logo, and vimeo videos. A client's page can then be viewed to see their videos and request more filming work. This app allows client information to be updated easily and increase productivity for the business.</p>
+          <p><a href="https://thevideoshelf.herokuapp.com">Live Site</a> | 
+          <a href="https://github.com/SMuyesser/thevideoshelf">Code</a></p>
+          <p class='toggle-title'>Project made using:</p> 
+          <p>HTML, CSS, JAVASCRIPT, JQUERY, AJAX, NODE, NPM, EXPRESS, HANDLEBARS, MONGODB, MONGOOSE, PASSPORT, HEROKU, MOCHA, CHAI, TRAVIS CI</p>                         
+        </li>
+        <li>
+          <h3>FIFA Formations</h3>
+          <p>Video game companion app</p>
+          <img class="app-img" src="images/fifalarge.png" alt="fifa formations">
+          <p class="app-description">Fifa has been my favorite video game for over a decade. This app is a helpful strategy guide for each Fifa Ultimate Team formation. It is a quick, simple, and easy to use way of setting up your team to win more games. All information was obtained from various online resources with some personal tweaks, but I do not take any credit.</p>
+          <p><a href="https://fifaformations.netlify.com">Live Site</a> | 
+          <a href="https://github.com/SMuyesser/fifa-formations">Code</a></p>
+          <p class='toggle-title'>Project made using:</p>  
+          <p>HTML, CSS, JAVASCRIPT, JQUERY, AXIOS, REACT, REDUX, NODE, NPM, EXPRESS, HANDLEBARS, MONGODB, MONGOOSE, PASSPORT, NETLIFY, HEROKU, MOCHA, CHAI, TRAVIS CI</p> 
+        </li>
+        <li>
+          <h3>The Movie Game</h3>
+          <p>Puzzle game for movie fans powered by TMDB API</p>
+          <img class="app-img" src="images/movielarge.png" alt="movie game">
+          <p class="app-description">The Movie Game is a fun puzzle game that tests players’ knowledge of movies and movie casts.  Players select a start and end movie and then alternate between cast members and other movies to link the start to the end.  The goal is to reach the end in the least amount of links.</p>
+          <p><a href="https://themoviegame.netlify.com">Live Site</a> | 
+          <a href="https://github.com/SMuyesser/themoviegame">Code</a></p>
+          <p class='toggle-title'>Project made using:</p>
+          <p>HTML, CSS, JAVASCRIPT, AXIOS, REACT, REDUX, NODE, NPM, EXPRESS, HANDLEBARS, MONGODB, MONGOOSE, PASSPORT, NETLIFY, HEROKU, MOCHA, CHAI, TRAVIS CI</p> 
+        </li>
+      </ul>
+    </section>
+    <img id="contact" class="line-break" src="images/line-break.png">
+    <section class="contact">
+      <h2 class="title">Contact Links</h2>
+      <ul class="contact-info">
+        <li class="phone"><img class="contact-img" src="images/phone.jpg"/><a href="tel:856-296-4383">(856) 296-4383</a></li>
+        <li class="mail"><img class="contact-img" src="images/email.jpg"/><a href="mailto:smuyesser@gmail.com">smuyesser@gmail.com</a></li>
+        <li class="linkedin"><img class="contact-img" src="images/linkedin.jpg"/><a href="https://www.linkedin.com/in/sinan-muyesser-1a8aa246/">Linkedin</a></li>
+        <li class="github"><img class="contact-img" src="images/github.jpg"/><a href="https://github.com/smuyesser">Github</a></li>
+        <li class="facebook"><img class="contact-img" src="images/facebook.jpg"/><a href="http://facebook.com/smuyesser">Facebook</a></li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2017 Sinan Muyesser</p>
+    </footer>
   </body>
 </html>

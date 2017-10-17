@@ -6,8 +6,6 @@ A site to showcase my projects, information about me, and my contact information
 
 - HTML5
 - CSS3
-- JavaScript
-- jQuery
 
 ## Author
 Sinan Muyesser

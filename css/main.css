@@ -3,13 +3,10 @@ GENERAL
 ************************************/
 
 body {
-  font-family: 'Jockey One', sans-serif;
-}
-
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
+  font-family: 'Cantarell', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  color: #7F4A43;
 }
 
 a {
@@ -18,71 +15,159 @@ a {
 
 img {
   max-width: 100%; /*sets max to width of container */
+  border: 2px solid #CC402E;
+}
+
+ul.tech-list {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2.title {
+  font-family: 'Fjalla One', sans-serif;
+  margin: 20px auto;
+  font-size: 2em;
 }
 
 img.line-break {
-  width: 100%;
+  width: 75%;
+  display: block;
+  margin: 20px auto;
+  border: none;
 }
 
-.hidden {
-  display: none;
-}
+
 
 /************************************
 HEADING
 ************************************/
 
 header {
-  border-color: #cc0000;
-  background-color: #212121;
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  background-color: #7F281D;
   width: 100%;
-  
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
-#logo {
-  text-align: center;
-  margin: 0; 
+div#main-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header h1 {
-  font-family: 'Bungee', cursive;
-  margin: 15px 0; /* spacing above and below, but none on left or right */
-  font-size: 1.75em; /* em are relative. 1 em is default */
-  font-weight: normal; /* unbolds because headings are default bolded */
-  line-height: 0.8em; /* amount of space for each line */
-  color: #fff;
-  text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 10px;
+  color: #FF5039;
 }
 
 header h2 { 
   font-size: 1.25em;
-  margin: -5px 0 0; /*less space up top and other margins are zero */
-  font-weight: normal;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 5px;
+  color: #FF5039;
 }
 
-header a {
-  color: white;
+div#header-space-fix {
+  display: block;
+  height: 108px;
 }
 
 
 
 /************************************
-PAGE: PORTFOLIO
+NAVIGATION LINKS
 ************************************/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Fjalla One', sans-serif;
+  width: 100%;
+  background-color: #7F4A43;
+  padding-left: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FF5039;
+  padding: 2px 5px;
+  font-size: 1.15em;
+  font-weight: bold;
+  border-top: 2px solid #7F4A43;
+}
+
+nav a:hover {
+  border-top: 2px solid #FF5039;
+}
+
+
+/************************************
+ABOUT
+************************************/
+
+img.profile-photo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 10px auto;
+    -webkit-box-shadow: 0 10px 6px -6px #444444;
+     -moz-box-shadow: 0 10px 6px -6px #444444;
+          box-shadow: 0 10px 6px -6px #444444;
+}
+
+.about-title {
+  text-align: center;
+  color: #800000;
+  font-size: 2em;
+  margin: 0px auto 5px auto;
+}
+
+.about p {
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-info img {
+  border-radius: 20%;
+  border: 2.5px solid #800000;
+}
+
+ul#skills {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+ul#skills div {
+  margin: 0px 20px;
+}
+
+/************************************
+PORTFOLIO
+************************************/
+
+section.portfolio h2 {
+  margin-bottom: 60px;
+}
 
 #gallery {
   margin: 0;
@@ -96,7 +181,7 @@ PAGE: PORTFOLIO
 
 #gallery li {
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,27 +191,29 @@ PAGE: PORTFOLIO
   padding: 5px;
 }
 
-#gallery li h2 {
-  font-size: 2em;
+#gallery li h3 {
+  font-size: 1.5em;
   width: 100%;
-  color: #800000;
+  color: #7F281D;
   margin: 5px auto;
   line-height: .75em;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 #gallery li p {
-  color: #1E1E1E;
+  color: #7F4A43;
   margin: 2px auto;
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1em;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #gallery li img.app-img {
   height: 250px;
   width: 350px;
-  border: 2.5px solid #800000;
   margin: 5px auto;
-  border-radius: 10px;
   -webkit-box-shadow: 0 10px 6px -6px #444444;
      -moz-box-shadow: 0 10px 6px -6px #444444;
           box-shadow: 0 10px 6px -6px #444444;
@@ -134,117 +221,25 @@ PAGE: PORTFOLIO
 }
 
 #gallery li p a {
-  color: black;
+  color: red;
+  font-size: 1.15em;
 }
 
 #gallery li p a:hover {
   color: #800000;
 }
 
-#gallery li button {
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  font-weight: bolder;
-  padding: 3px 10px;
-  margin-bottom: 10px;
-  -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
-  -webkit-box-shadow: 0 10px 6px -6px #444444;
-     -moz-box-shadow: 0 10px 6px -6px #444444;
-          box-shadow: 0 10px 6px -6px #444444;
-}
-
-#gallery li button:hover {
-  border-radius: 10px;
-}
-
-#gallery li div.toggle p.app-description {
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-#gallery li div.toggle p.toggle-title {
-  color: #800000;
-}
-
 
 
 /************************************
-PAGE: ABOUT
-************************************/
-
-.profile-photo {
-  display: block;
-  max-width: 200px;
-  margin: 0 auto 10px auto;
-}
-
-.about-title {
-  text-align: center;
-  color: #800000;
-  font-size: 2em;
-  margin: 0px auto 5px auto;
-}
-
-.about-info p {
-  text-align: center;
-}
-
-.about-info img {
-  border-radius: 20%;
-  border: 2.5px solid #800000;
-}
-
-.about-info img#gamer-pic {
-  width: 175px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-div.tech-pics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-div.tech-pics img {
-  max-width: 50px;
-  max-height: 50px;
-  border: none;
-  margin: 2.5px;
-  border-radius: 0px;
-}
-
-div.tech-pics img.wide-logo {
-  max-width: 75px;
-  max-height: 25px;
-}
-
-div.tech-pics img.express {
-  max-height: 10px;
-}
-
-div.tech-pics img.express,
-div.tech-pics img.mongoose {
-  padding-top: 10px;
-}
-
-
-
-/************************************
-PAGE: CONTACT
+CONTACT
 ************************************/
 
 .contact-info {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 24px;
 }
 
 h3 {
@@ -252,75 +247,42 @@ h3 {
   color: #800000;
 }
 
-.contact-info a {
-  display: block;
+ul.contact-info {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul.contact-info li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-height: 25px;
+  margin-bottom: 10px;
+}
+
+ul.contact-info img {
+  max-height: 30px;
+  width: 25px;
+  display: inline-block;
+  border: none;
+  margin-right: 5px;
+}
+
+ul.contact-info a {
+  display: inline-block;
   min-height: 20px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
   text-decoration: none;
-  color: black;
+  color: red;
+  padding-top: 0px;
 }
 
-.contact-info li.phone a {
-  background-image: url('../images/phone.png');
+ul.contact-info a:hover {
+  color: #800000;
 }
 
-.contact-info li.mail a {
-  background-image: url('../images/mail.png');
-}
-
-.contact-info li.linkedin a {
-  background-image: url('../images/linkedin logo.png');
-}
-
-.contact-info li.github a {
-  background-image: url('../images/github.png');
-}
-
-.contact-info li.facebook a {
-  background-image: url('../images/facebook.png');
-}
-
-/************************************
-NAVIGATION
-************************************/
-
-nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
-  background: #800000;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  font-weight: 800;/*makes our links more bold and padding increases clickability */
-  padding: 15px 10px;
-    
-}
-
-/* nav link */
-nav a, nav a:visited {
-  color: #f2f2f2;
-}
-
-/* anchor elements in the nav with class selected and pseudo class hover */
-nav a.selected, nav a:hover {
-  color: #fff;
-  font-size: 1.15em;
-  text-shadow: 2px 2px 3px black;
-}
 
 
 /************************************
@@ -333,12 +295,6 @@ footer {
   padding-top: 20px;
   color: #880000;
   clear: both;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
 }
 
 footer p {
