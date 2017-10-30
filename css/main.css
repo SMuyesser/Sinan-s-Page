@@ -6,7 +6,8 @@ body {
   font-family: 'Cantarell', sans-serif;
   text-align: center;
   box-sizing: border-box;
-  color: #7F4A43;
+  color: #1D1D1D;
+  background-color: #E8E7E7;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 
 img {
   max-width: 100%; /*sets max to width of container */
-  border: 2px solid #CC402E;
+  border: 2px solid #05985F;
 }
 
 ul.tech-list {
@@ -33,13 +34,7 @@ h2.title {
   font-family: 'Fjalla One', sans-serif;
   margin: 20px auto;
   font-size: 2em;
-}
-
-img.line-break {
-  width: 75%;
-  display: block;
-  margin: 20px auto;
-  border: none;
+  color: #05985F; 
 }
 
 
@@ -49,7 +44,7 @@ HEADING
 ************************************/
 
 header {
-  background-color: #7F281D;
+  background-color: #05985F;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -73,7 +68,7 @@ header h1 {
   font-weight: bold;
   margin: 0px;
   margin-top: 10px;
-  color: #FF5039;
+  color: #EEEEEE;
 }
 
 header h2 { 
@@ -81,7 +76,7 @@ header h2 {
   font-weight: bold;
   margin: 0px;
   margin-top: 5px;
-  color: #FF5039;
+  color: #EEEEEE;
 }
 
 div#about {
@@ -100,21 +95,21 @@ nav {
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
   width: 100%;
-  background-color: #7F4A43;
+  background-color: #03784B;
   padding-left: 0px;
 }
 
 nav a {
   text-decoration: none;
-  color: #FF5039;
+  color: #EEEEEE;
   padding: 2px 5px;
   font-size: 1.15em;
   font-weight: bold;
-  border-top: 2px solid #7F4A43;
+  border-top: 2px solid #03784B;
 }
 
 nav a:hover {
-  border-top: 2px solid #FF5039;
+  border-top: 2px solid #EEEEEE;
 }
 
 
@@ -124,7 +119,7 @@ ABOUT
 
 img.profile-photo {
   display: block;
-  max-width: 200px;
+  max-width: 300px;
   margin: 0 auto 10px auto;
     -webkit-box-shadow: 0 10px 6px -6px #444444;
      -moz-box-shadow: 0 10px 6px -6px #444444;
@@ -166,7 +161,8 @@ PORTFOLIO
 ************************************/
 
 section.portfolio h2 {
-  margin-bottom: 60px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 #gallery {
@@ -181,7 +177,7 @@ section.portfolio h2 {
 
 #gallery li {
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,14 +190,14 @@ section.portfolio h2 {
 #gallery li h3 {
   font-size: 1.5em;
   width: 100%;
-  color: #7F281D;
+  color: #03784B;
   margin: 5px auto;
   line-height: .75em;
   font-family: 'Fjalla One', sans-serif;
 }
 
 #gallery li p {
-  color: #7F4A43;
+  color: #4E4E4E;
   margin: 2px auto;
   width: 100%;
   font-size: 1em;
@@ -213,7 +209,7 @@ section.portfolio h2 {
 #gallery li img.app-img {
   height: 250px;
   width: 350px;
-  margin: 5px auto;
+  margin: 5px auto 10px auto;
   -webkit-box-shadow: 0 10px 6px -6px #444444;
      -moz-box-shadow: 0 10px 6px -6px #444444;
           box-shadow: 0 10px 6px -6px #444444;
@@ -221,12 +217,12 @@ section.portfolio h2 {
 }
 
 #gallery li p a {
-  color: red;
+  color: #05985F;
   font-size: 1.15em;
 }
 
 #gallery li p a:hover {
-  color: #800000;
+  color: #03784B;
 }
 
 
@@ -275,12 +271,12 @@ ul.contact-info a {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   text-decoration: none;
-  color: red;
+  color: #05985F;
   padding-top: 0px;
 }
 
 ul.contact-info a:hover {
-  color: #800000;
+  color: #03784B;
 }
 
 
@@ -293,7 +289,7 @@ footer {
   font-size: 1em;
   text-align: center;
   padding-top: 20px;
-  color: #880000;
+  color: #05985F;
   clear: both;
 }
 
