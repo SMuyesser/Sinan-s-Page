@@ -69,6 +69,10 @@
     height: 108px;
   }
 
+  section.about p {
+    max-width: 60%;
+  }
+
   nav {
     height: 100%;
     width: 220px;
@@ -101,6 +105,10 @@
   #gallery li img.app-img {
     height: 400px;
     width: 550px;
+  }
+
+  #gallery li p {
+    max-width: 60%;
   }
 }
 

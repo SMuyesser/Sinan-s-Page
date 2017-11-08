@@ -209,7 +209,7 @@ section.portfolio h2 {
 #gallery li img.app-img {
   height: 250px;
   width: 350px;
-  margin: 5px auto 10px auto;
+  margin: 15px auto 20px auto;
   -webkit-box-shadow: 0 10px 6px -6px #444444;
      -moz-box-shadow: 0 10px 6px -6px #444444;
           box-shadow: 0 10px 6px -6px #444444;
