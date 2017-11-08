@@ -6,7 +6,7 @@ body {
   font-family: 'Cantarell', sans-serif;
   text-align: center;
   box-sizing: border-box;
-  color: #1D1D1D;
+  color: #4E4E4E;
   background-color: #E8E7E7;
 }
 
@@ -230,7 +230,6 @@ p.short-info {
 }
 
 #gallery p.toggle-title {
-  margin-top: 10px;
   font-weight: bold;
 }
 
