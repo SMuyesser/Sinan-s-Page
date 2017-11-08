@@ -175,6 +175,10 @@ section.portfolio h2 {
   width: 100%;
 }
 
+p.short-info {
+  font-weight: bold;
+}
+
 #gallery li {
   align-items: center;
   margin-bottom: 20px;
@@ -213,16 +217,21 @@ section.portfolio h2 {
   -webkit-box-shadow: 0 10px 6px -6px #444444;
      -moz-box-shadow: 0 10px 6px -6px #444444;
           box-shadow: 0 10px 6px -6px #444444;
-
 }
 
 #gallery li p a {
   color: #05985F;
   font-size: 1.15em;
+  font-weight: bold;
 }
 
 #gallery li p a:hover {
   color: #03784B;
+}
+
+#gallery p.toggle-title {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 
