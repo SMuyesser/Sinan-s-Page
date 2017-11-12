@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   color: #4E4E4E;
   background-color: #E8E7E7;
+  line-height: 20px;
 }
 
 a {
@@ -223,6 +224,10 @@ p.short-info {
   color: #05985F;
   font-size: 1.15em;
   font-weight: bold;
+}
+
+#gallery li p.live-code-links {
+  margin: 10px auto;
 }
 
 #gallery li p a:hover {
