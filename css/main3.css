@@ -7,7 +7,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   color: #4E4E4E;
-  background-color: #E8E7E7;
+  background-color: #fff;
   line-height: 20px;
 }
 
@@ -17,7 +17,7 @@ a {
 
 img {
   max-width: 100%; /*sets max to width of container */
-  border: 2px solid #05985F;
+  border: 2px solid #64BF39;
 }
 
 ul.tech-list {
@@ -35,7 +35,7 @@ h2.title {
   font-family: 'Fjalla One', sans-serif;
   margin: 20px auto;
   font-size: 2em;
-  color: #05985F; 
+  color: #595959; 
 }
 
 
@@ -45,7 +45,7 @@ HEADING
 ************************************/
 
 header {
-  background-color: #05985F;
+  background-color: #595959;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -54,6 +54,7 @@ header {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  z-index: 10;
 }
 
 div#main-title {
@@ -96,7 +97,7 @@ nav {
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
   width: 100%;
-  background-color: #03784B;
+  background-color: #7EB05C;
   padding-left: 0px;
 }
 
@@ -106,7 +107,7 @@ nav a {
   padding: 2px 5px;
   font-size: 1.15em;
   font-weight: bold;
-  border-top: 2px solid #03784B;
+  border-top: 2px solid #7EB05C;
 }
 
 nav a:hover {
@@ -117,15 +118,6 @@ nav a:hover {
 /************************************
 ABOUT
 ************************************/
-
-img.profile-photo {
-  display: block;
-  max-width: 300px;
-  margin: 0 auto 10px auto;
-    -webkit-box-shadow: 0 10px 6px -6px #444444;
-     -moz-box-shadow: 0 10px 6px -6px #444444;
-          box-shadow: 0 10px 6px -6px #444444;
-}
 
 .about-title {
   text-align: center;
@@ -141,11 +133,6 @@ img.profile-photo {
   margin-right: auto;
 }
 
-.about-info img {
-  border-radius: 20%;
-  border: 2.5px solid #800000;
-}
-
 ul#skills {
   margin-left: auto;
   margin-right: auto;
@@ -156,6 +143,19 @@ ul#skills {
 ul#skills div {
   margin: 0px 20px;
 }
+
+div#pos-fix {
+  position: static;
+  display: block;
+  height: 280px;
+  width: 100%;
+  padding: 18px;
+}
+
+div.bb {
+  position: relative;
+}
+
 
 /************************************
 PORTFOLIO
@@ -195,7 +195,7 @@ p.short-info {
 #gallery li h3 {
   font-size: 1.5em;
   width: 100%;
-  color: #03784B;
+  color: #64BF39;
   margin: 5px auto;
   line-height: .75em;
   font-family: 'Fjalla One', sans-serif;
@@ -221,7 +221,7 @@ p.short-info {
 }
 
 #gallery li p a {
-  color: #05985F;
+  color: #3383EF;
   font-size: 1.15em;
   font-weight: bold;
 }
@@ -231,7 +231,7 @@ p.short-info {
 }
 
 #gallery li p a:hover {
-  color: #03784B;
+  color: #A69595;
 }
 
 #gallery p.toggle-title {
@@ -284,7 +284,7 @@ ul.contact-info a {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   text-decoration: none;
-  color: #05985F;
+  color: #3383EF;
   padding-top: 0px;
 }
 
@@ -302,10 +302,13 @@ footer {
   font-size: 1em;
   text-align: center;
   padding-top: 20px;
-  color: #05985F;
+  color: #64BF39;
   clear: both;
 }
 
 footer p {
   margin-top: 5px;
+  margin-bottom: 20px;
 }
+
+

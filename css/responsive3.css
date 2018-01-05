@@ -14,7 +14,7 @@
     padding: 2px 5px;
     font-size: 1.15em;
     font-weight: bold;
-    border-top: 2px solid #03784B;
+    border-top: 2px solid #7EB05C;
   }
 
   nav a:hover {
@@ -31,7 +31,7 @@
 @media screen and (min-width: 750px) {
 
   header {
-    background-color: #05985F;
+    background-color: #595959;
     padding: 0px 20px 0 20px;
     width: 100%;
     position: fixed;
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #05985F;
+    background-color: #595959;
   }
 
   nav a {
@@ -91,7 +91,7 @@
     font-size: 1.15em;
     font-weight: bold;
     border-top: none;
-    border-bottom: 2px solid #05985F;
+    border-bottom: 2px solid #595959;
   }
 
   nav a:hover {
@@ -105,11 +105,16 @@
 
   #gallery li img.app-img {
     height: 400px;
-    width: 550px;
+    width: 725px;
   }
 
   #gallery li p {
     max-width: 60%;
   }
+
+  div#pos-fix {
+    height: 335px;
+  }
 }
+
 

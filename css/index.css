@@ -1,0 +1,62 @@
+.bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.bb {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #595959;
+  margin: auto;
+  background: url("../images/sinan.jpg") no-repeat 100%/100% rgba(0, 0, 0, 0.1);
+  color: #64BF39;
+  box-shadow: inset 0 0 0 1px rgba(100, 191, 57, 0.5); }
+  @media screen and (min-width: 750px) {
+    .bb {
+      width: 300px;
+      height: 300px; } }
+  .bb::before, .bb::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 4px;
+    animation: clipMe 8s linear infinite; }
+    @media screen and (min-width: 750px) {
+      .bb::before, .bb::after {
+        animation: large-clipMe 8s linear infinite; } }
+  .bb::before {
+    animation-delay: -4s; }
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 275px, 4px, 0px); }
+  25% {
+    clip: rect(0px, 4px, 275px, 0px); }
+  50% {
+    clip: rect(271px, 275px, 275px, 0px); }
+  75% {
+    clip: rect(0px, 275px, 275px, 271px); } }
+@keyframes large-clipMe {
+  0%, 100% {
+    clip: rect(0px, 330px, 4px, 0px); }
+  25% {
+    clip: rect(0px, 4px, 330px, 0px); }
+  50% {
+    clip: rect(326px, 330px, 330px, 0px); }
+  75% {
+    clip: rect(0px, 330px, 330px, 326px); } }
+html,
+body {
+  height: 100%; }
+
+body {
+  position: relative; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=index.css.map */
