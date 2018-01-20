@@ -289,7 +289,7 @@ ul.contact-info a {
 }
 
 ul.contact-info a:hover {
-  color: #03784B;
+  color: #A69595;
 }
 
 
@@ -302,13 +302,15 @@ footer {
   font-size: 1em;
   text-align: center;
   padding-top: 20px;
-  color: #64BF39;
+  color: #EEEEEE;
   clear: both;
 }
 
 footer p {
+  background-color: #595959;
   margin-top: 5px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 
